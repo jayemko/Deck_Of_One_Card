@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CCD09B4251A91420059FF1F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD09B3251A91420059FF1F /* Card.swift */; };
+		3CCD09B7251A93460059FF1F /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD09B6251A93460059FF1F /* CardController.swift */; };
+		3CCD09BA251A94260059FF1F /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD09B9251A94260059FF1F /* CardError.swift */; };
+		3CCD09BF251AA4230059FF1F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCD09BE251AA4230059FF1F /* CardViewController.swift */; };
 		7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23723AA9BB700D23AFA /* AppDelegate.swift */; };
 		7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */; };
 		7E62A23F23AA9BB700D23AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E62A23D23AA9BB700D23AFA /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CCD09B3251A91420059FF1F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Card.swift; path = DeckOfOneCard/Card.swift; sourceTree = SOURCE_ROOT; };
+		3CCD09B6251A93460059FF1F /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardController.swift; path = DeckOfOneCard/CardController.swift; sourceTree = SOURCE_ROOT; };
+		3CCD09B9251A94260059FF1F /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		3CCD09BE251AA4230059FF1F /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CardViewController.swift; path = DeckOfOneCard/Helpers/CardViewController.swift; sourceTree = SOURCE_ROOT; };
 		7E62A23423AA9BB700D23AFA /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E62A23723AA9BB700D23AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +91,7 @@
 		7E62A25223AA9D3E00D23AFA /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3CCD09B3251A91420059FF1F /* Card.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -91,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */,
+				3CCD09B9251A94260059FF1F /* CardError.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -98,6 +108,7 @@
 		7E62A25423AA9D4800D23AFA /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CCD09B6251A93460059FF1F /* CardController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -105,6 +116,7 @@
 		7E62A25523AA9D5300D23AFA /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3CCD09BE251AA4230059FF1F /* CardViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -136,7 +148,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = Warren;
 				TargetAttributes = {
 					7E62A23323AA9BB700D23AFA = {
@@ -180,9 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CCD09B7251A93460059FF1F /* CardController.swift in Sources */,
+				3CCD09BF251AA4230059FF1F /* CardViewController.swift in Sources */,
 				7E62A25123AA9D3400D23AFA /* UIViewControllerExtension.swift in Sources */,
+				3CCD09BA251A94260059FF1F /* CardError.swift in Sources */,
 				7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */,
 				7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */,
+				3CCD09B4251A91420059FF1F /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -312,7 +328,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
